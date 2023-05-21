@@ -1,0 +1,37 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="MainActivity">
+
+    <EditText
+        android:id="@+id/editTextGrossSalary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gross Salary" />
+
+    <EditText
+        android:id="@+id/editTextTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextGrossSalary"
+        android:hint="Tax" />
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTax"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/textViewNetSalary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCalculate"
+        android:layout_marginTop="16dp"
+        android:text="Net Salary:" />
+
+</RelativeLayout>
